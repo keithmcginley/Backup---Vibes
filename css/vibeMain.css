@@ -1,0 +1,966 @@
+/* ----------------------------- Vibes App |  Main CSS ------------------------*/
+
+// ------------------------------  Font CSS ------------------------------------
+// ---------------------------------------------------------------------------*/ 
+
+@font-face
+{
+    font-family: Raleway_200;
+    src: url(font/Raleway-Thin.ttf);
+}
+
+@font-face
+{
+    font-family: Raleway_300;
+    src: url(font/Raleway-Light.ttf);
+}
+
+@font-face
+{
+    font-family: Raleway_400;
+    src: url(font/Raleway-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: Raleway_500;
+    src: url(font/Raleway-Medium.ttf);
+}
+
+body
+{
+    font-family: 'Raleway_200', sans-serif;
+    color: #000;
+    background-color: #ccc !important;
+}
+
+
+h1, h2, h3, h4
+{
+    font-family: 'Raleway_200', sans-serif;
+    /* padding-top: 5px; */
+    color: #000;
+}
+
+.ui-header .ui-title, .ui-footer .ui-title {
+    padding-bottom: 0 !important;
+}
+
+p, a
+{
+    font-family: 'Raleway_300', sans-serif;
+}
+
+li a 
+{
+    font-family: 'Raleway_300', sans-serif !important;
+}
+
+/* ------------------------------------------------------------------------------------------
+// ------------------------------  Login Form CSS -------------------------------------------
+// ----------------------------------------------------------------------------------------*/ 
+#loginWrap {
+    background-image: url(../images/loginImg.svg); 
+    background-repeat:no-repeat;  
+    background-size: 100%;
+}
+
+#loginForm {
+    padding-top: 84px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.loginContent {
+    width: 320px;
+    height: 470px;
+    padding-top: 100px;
+}
+
+#signUp {
+    padding: 8px;
+    margin-left: 5.5em; 
+    /* margin-bottom: 20px; */
+    text-decoration: none;
+    color: #ED4798;
+    font-weight: bolder;
+    background-color: #E2E2E2;
+    opacity: .9;
+    border-radius: 25px;
+}
+
+#forgotPass, #changePass {
+    text-decoration: none;
+    color: #9e9e9e;
+    margin: 5em;
+}
+
+/* Sets the password input and title input fields */
+#password-clear 
+{
+    display: none;
+}
+
+#formImg {
+    position: absolute;
+    bottom: 0;
+
+}
+
+/* Set the form inputs CSS */
+input[type='text']
+{
+    font-family: 'Raleway_300', sans-serif !important;
+}
+
+#formErrorMsg
+{
+    color: RGBA(255, 119, 0, 1);
+    background-color: RGBA(247, 205, 7, .5);
+    opacity: .9;
+}
+
+#loginUnder p 
+{
+    padding: 20px;
+}
+
+.orangeBackground
+{
+    color: RGBA(255, 119, 0, 1) !important;
+    background-color: RGBA(247, 205, 7, .5) !important;
+}
+
+/* ------------------------------  Splash Screen CSS ----------------------------------------
+// ----------------------------------------------------------------------------------------*/ 
+
+.img100
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------------------  Splash Screen CSS ----------------------------------------
+// ----------------------------------------------------------------------------------------*/ 
+.guideImg1 {
+    width: 100%; 
+    background-image: url("../images/guide/takePhotoBack.png");
+    background-repeat: no-repeat;
+}
+
+.guideImg0 {
+    width: 100%; 
+    background-image: url("../images/guide/whatsYourVibeBack.png");
+    background-repeat: no-repeat;
+}
+
+.guideImg2 {
+    width: 100%; 
+    background-image: url("../images/guide/emotionSearchBack.png");
+    background-repeat: no-repeat;
+}
+
+.guideImg3 {
+    width: 100%; 
+    background-image: url("../images/guide/keepTrackBack.png");
+    background-repeat: no-repeat;
+
+}
+
+/* ------------------------------  Map Div CSS ----------------------------------------------
+// ----------------------------------------------------------------------------------------*/  
+
+#mapPage
+{
+    overflow: hidden;
+}
+
+#map {
+    width: 320px;
+    height: 501px;
+}
+
+.keys {
+    position: relative;
+    top: 0;
+    min-height: 503px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#mapPage .centerButton {
+    width: 45px;
+    margin: 0;
+    height: 50px;
+    padding: 5px;
+    background-color: rgba(255,255,255, 0.05);
+}
+#map .leaflet-control-container .leaflet-bottom.leaflet-right .centerButton.leaflet-control  a {
+    text-align: right;
+    color: #F7B4D5;  
+}
+
+
+/* ---- Wheel of Colour ---*/
+#mapPage .statsUp {
+    margin: 10px; 
+    width:100px;
+    height:150px;
+    //background-color:rgba(250,250,250, 0.8);
+    position: absolute; 
+    z-index: 4; 
+    top: 380px; 
+}
+
+/* --------------------------------
+// ----------  Popup Bg  ---------*/
+.popUpBg
+{
+    background-image: url("../images/emojiEnter.png");
+    background-repeat: no-repeat;
+    background-color: #fff;
+    opacity: .8;
+    width: 280px;
+    height: 330px;
+    margin: 0;
+}
+
+.emoPostPopup, .popUpInfo, .timeInfo, .btnLove, .btnShare{
+    background-color: rgba(255,255,255, 0.75) !important;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+/* Popup CSS */
+#emoPostPopup
+{
+    position:absolute;
+    z-index: 1950;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    /* transform: rotate(90deg); */
+}
+
+#popUpInfo
+{
+    position:absolute;
+    z-index: 1950;
+    bottom: 5px;
+    left: 5px;
+    width: 270px;
+    text-align: center;
+    color: #9e9e9e;
+}
+
+/* ------------------------------------------------------------------------------------------
+// ------------------------------  Filter Form  ------------------------------------------
+// ----------------------------------------------------------------------------------------*/ 
+
+#filterForm {
+    margin: 0 auto;
+    padding: 0;
+    color: #9e9e9e;
+    letter-spacing: 0.1em; 
+    font-weight: lighter;
+}
+
+#filterForm .ui-controlgroup, fieldset.ui-controlgroup {
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------------------------------------------------------------------------------------
+// ------------------------------  Emoji Selection  ------------------------------------------
+// ----------------------------------------------------------------------------------------*/ 
+
+#emojiSearchBar {
+    position: absolute;
+    background-color: #fff;
+    top: -100%;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+#emojiSearchBar img {
+    width: 20%;
+}
+
+.filterOff {
+    opacity: .25;
+}
+
+/* ------------------------------------------------------------------------------------------
+// ------------------------------  Profile Page  ------------------------------------------
+// ----------------------------------------------------------------------------------------*/ 
+
+
+.profilePage {
+    max-height: 633px;
+    max-width: 320px;
+}
+
+.profileHeader
+{
+    position: fixed;    
+    z-index: 1000;
+    width: 100%;
+    padding-top: 20px;
+    height: 88px; 
+    background-image: url(../images/profile/profileBack_4.svg);
+    background-color: #fff;
+    top: 0;
+    left: 0;    
+}
+
+.profileheaderImg {
+    width: 128px;
+}
+
+.profileHeader a {
+    float: right;
+}
+
+.profileNavImg {
+    float: right;
+    padding-right: 1em;
+}
+
+.profileHeader img {
+    width: 33%;
+    height: 44px; 
+}
+
+.profileTab {
+    position: fixed;
+    overflow: hidden;
+    height: 501px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 0.3em;
+    background-image: url("../images/profile/settingsBack.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-left: 2px;
+}
+
+#skrollr-body {
+    height: 501px;
+    width: 320px;
+}
+
+#profilePopup {
+    position: absolute;
+    height: 501px;
+    width: 320px;
+    overflow: visible;
+}
+
+#profilePostsWrap {
+    //position: absolute;
+    width: 100%;
+    //height: 100%;
+    height: 501px;
+    //overflow:visible;
+    margin-bottom: 10px;
+}
+
+.profilePostDiv {
+    width: 45%;
+    float: left;
+    margin-left: 3.33%;
+}
+
+#profilePosts {
+    min-height: 501px;
+    width: 100%;
+}
+
+#profilePosts p {
+    font-size: 0.9em;
+    color: #9e9e9e;
+    margin-top: 0;
+    text-align: center;
+}
+
+#profilePostsWrap #profilePosts .largeImg {
+    width: 100%;
+    margin-left: 0;
+    font-size: 2em;
+}
+
+.giantImg {
+    position: fixed;
+    padding: 40px 0;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    border-bottom: #E2E2E2 1px solid;
+}
+.giantImg img {
+    width: 100%;
+}
+
+.giantImg p {
+    font-size: 1em;
+    margin: 0 0 0 5px;
+    color: #9e9e9e;
+}
+
+.profilePostDiv img {
+    width: 100%;
+}
+
+.noVibes {  
+    max-width: 320px;
+    max-height: 100px;
+    
+    padding-top: 5px;
+    border: 1px solid #9e9e9e;
+    color: #9e9e9e;
+    text-align: center;
+}
+
+
+#addMoreDiv {
+    width: 320px;
+    height: 60px;
+    clear: both;
+}
+
+/* ENd of Profile Posts */
+
+#logoutDiv {
+    width: 320px;
+    padding-top: 15px;
+    
+    background-color: rgba(255,255,255,0.8);
+    clear: both;
+}
+#profilePostsWrap a,
+#addProfilePost {
+    //margin-left: 7em;
+    padding-left:  50px;
+    padding-right:   50px;
+    padding-top:   10px;
+    padding-bottom:   10px;
+    height: 44px !important;
+    min-width:  200px !important;
+    max-width: 200px;
+    color: #ED4798;
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #9e9e9e;
+    font-size: 16px;
+    margin: 4em;
+    border-radius: 25px;
+
+    //background-repeat: no-repeat; 
+
+}
+
+
+/* ------------------------------------------------------------------------------------------
+// ------------------------------  Panel Menu  ------------------------------------------
+// ----------------------------------------------------------------------------------------*/ 
+
+.ui-header-fixed.ui-fixed-hidden .ui-btn-left, .ui-header-fixed.ui-fixed-hidden .ui-btn-right {
+    margin-top: 15px;
+}
+
+.menu-button {
+    position: fixed;
+    z-index: 1005;
+    margin-top: 30px;
+    padding: 0;
+    width: 44px;
+    max-width: 15%;
+    height: 44px;
+    border: none;
+    text-indent: 2.5em;
+    font-size: 1.5em;
+    color: transparent;
+    background: transparent;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    background-image: url('img/hamburger_light.svg');
+    background-size: 100%;
+}
+
+.menu-top {
+    position:absolute;
+    z-index: 10;
+    line-height: 40px;
+    width: 300px;
+    background-image: url(../images/menu/menuTopBack_2.svg); 
+    background-repeat: no-repeat; 
+    background-color: #fff;    
+}
+
+.menu-top .profile {
+    //display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 0;
+    line-height: 40px;
+    width: 300px;
+}
+
+.menu-top .profile img {
+    float: left;
+}
+
+#panelBtns {
+    position: fixed;
+    top: 90px;
+    overflow:hidden;
+}
+
+.menu-top-buttons a {
+    //display: block;
+    /* padding-left: 1em; */
+    border-bottom: 0px solid rgba(0,0,0,0.1);
+}
+
+.infoMenu {
+    //display: none;
+
+    margin-left: 3.3em;
+    margin-top: 1em;
+}
+
+.infoMenu a {
+    padding-right: 2em;
+}
+
+.menu-side {    
+    background-image: url(../images/menu/menuSideImg_2.svg);
+    background-repeat: no-repeat;
+}
+
+.menu-button ::before {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    bottom: 0.5em;
+    left: 0.5em;
+    background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
+    content: '';
+}
+
+.panel-btn, .infoMenuButtonImg
+{
+    height: auto;
+    margin: 0;
+    padding: 1em 3.6em;
+    width: 150px;
+    max-width: 150px;
+    display: block;
+}
+
+.infoMenuButtonImg {
+    margin-bottom: 100px;
+    /* padding-left: 3.9em; */
+}
+
+.profile-button {
+    margin-top: 20px;
+    padding: 0;
+    width: 44px;
+    max-width: 15%;
+    height: 44px;
+    border: none;
+    text-indent: 2.5em;
+    font-size: 1.5em;
+    color: transparent;
+    background: transparent;
+    background-image: url('../images/profile/myVibes.svg');
+    background-size: 100%;
+}
+
+.settings-button {
+    margin-top: 20px;
+    padding: 0;
+    width: 44px;
+    max-width: 15%;
+    height: 44px;
+    border: none;
+    text-indent: 2.5em;
+    font-size: 1.5em;
+    color: transparent;
+    background: transparent;
+    background-image: url('../images/profile/settings.svg');
+    background-size: 100%;
+}
+
+
+#myPopup0 {
+
+    background-color: white;
+    color: #9e9e9e;
+    font: sans-serif;
+    font-weight: lighter;
+    font-family: helvetica;
+    letter-spacing: 1px;
+    border-color: #F8ED40;
+}
+
+
+#myPopup1 {
+
+    background-color: white;
+    color: #9e9e9e;
+    font: sans-serif;
+    font-weight: lighter;
+    font-family: helvetica;
+    letter-spacing: 1px;
+    border-color: #06B052;
+}
+
+#myPopup2 {
+
+    background-color: white;
+    color: #9e9e9e;
+    font: sans-serif;
+    font-weight: lighter;
+    font-family: helvetica;
+    letter-spacing: 1px;
+    border-color: #426EB5;
+}
+
+#myPopup3 {
+
+    background-color: white;
+    color: #9e9e9e;
+    font: sans-serif;
+    font-weight: lighter;
+    font-family: helvetica;
+    letter-spacing: 1px;
+    border-color: #F7961D;
+}
+
+#myPopup4 {
+
+    background-color: white;
+    color: #9e9e9e;
+    font: sans-serif;
+    font-weight: lighter;
+    font-family: helvetica;
+    letter-spacing: 1px;
+    border-color: #754D9E;
+}
+
+#myPopup5 {
+
+    background-color: white;
+    color: #9e9e9e;
+    font: sans-serif;
+    font-weight: lighter;
+    font-family: helvetica;
+    letter-spacing: 1px;
+    border-color: #ED2A25;
+
+}
+
+#myPopup6 {
+
+    background-color: white;
+    color: #9e9e9e;
+    font: sans-serif;
+    font-weight: lighter;
+    font-family: helvetica;
+    letter-spacing: 1px;
+    border-color: #ED4798;
+}
+
+#myPopup7 {
+
+    background-color: white;
+    color: #9e9e9e;
+    font: sans-serif;
+    font-weight: lighter;
+    font-family: helvetica;
+    letter-spacing: 1px;
+    border-color: #F3BCD1;
+}
+
+.p {
+    text-align: center;
+}
+
+#mapAttr a {
+    padding-top: 30px;
+    font-size: .5em;
+    color: #C1C0C0; 
+}
+
+
+/* ------------------------------------------------------------------------------------------
+// ------------------------------  Emoji Selection #emojiSelectPage ---------------------------------
+// ----------------------------------------------------------------------------------------*/ 
+
+#emojiSearchBar h3 {
+    padding-bottom: 10px;
+    color: #9e9e9e;
+    font-weight: lighter;
+}
+
+#emojiPostSelectParent {
+    position: absolute;
+    background-color: rgba(255,255,255,.9);
+    top: 200px;
+    left: -100%;
+    width: 100%;
+}
+
+#parentEmojiSelect {
+    color: #9e9e9e; 
+    letter-spacing: 0.3em; 
+    font-weight: lighter;
+    text-align: center;
+}
+
+#parentEmojiSelect h2 {
+    padding-bottom: 10px;
+    color: #9e9e9e; 
+}
+
+.emojiParent {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.emojiParent img {
+    width: 20%;
+}
+
+#canvasBuffer {
+    width: 100%;
+    height: 64px;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------
+// ------------------------------  emoji panel ---------------------------------
+// ----------------------------------------------------------------------------------------*/ 
+
+#keyPadDiv {
+    position: absolute;
+    background-color: #fff;
+    z-index: 10000;
+    bottom: -100%;
+}
+
+.clearLast {
+    float: left; 
+    border-top: #9e9e9e 1px solid;
+    border-bottom: #9e9e9e 1px solid;
+    margin: 8px;
+    padding: 2px;
+
+
+}
+
+.placeEmojiDiv {
+    position: fixed;
+    top: 380px;
+    z-index: 10000;
+}
+
+.closeKeyPad {
+    float: right; 
+    border-top: #9e9e9e 1px solid;
+    border-bottom: #9e9e9e 1px solid;
+    margin: 8px;
+    padding: 2px;
+}
+
+#tabs.ui-tabs 
+{
+    padding: 0;
+}
+
+.mytab {
+    width: 16% !important;  /* 12.5% for 8 tabs wide */
+    clear: none !important;  /* Prevent line break caused by ui-block-a */
+}
+
+.tabEmoji
+{
+    background-color: #E2E2E2;    
+}
+
+.addEmoji
+{
+    height: 30px;
+    width: 30px;
+    padding: 7.5px 0 7.5px 14px;
+}
+
+.emojiRender
+{
+    padding: 5px;
+}
+
+.pad50
+{
+    margin-top: 50px;
+}
+
+/* -----------------------------------------------------------------------------
+// ------------------------------  Button / Input  CSS  --------------------------
+// ---------------------------------------------------------------------------*/ 
+
+#settingsPage .content-wrap .buttonStyles,  
+#emotionPostPage .content-wrap .buttonStyles {
+    color: #9e9e9e; 
+    letter-spacing: 0.3em; 
+    font-weight: lighter;
+    text-align: center;
+
+
+}
+
+#settingsPage .content-wrap input, select, label {
+    color: #9e9e9e;
+}
+
+#settingsPage .collapseDiv {
+    padding: 0% 20%;
+    float: top;
+
+}
+
+#settingsForm p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+#logoutBtn {
+    
+    float: bottom;
+    padding: 8px;
+    margin-left: -.5em;
+    text-decoration: none;
+    color: #9e9e9e;
+    font-weight: bolder;
+    opacity: .9;
+    border: #E2E2E2 1px solid;
+
+
+
+}
+#updateBtn {
+    padding: 6px;
+    margin-left: -.5em;
+    
+    text-decoration: none;
+    color: #ED4798;
+    font-weight: bolder;
+    background-color: #E2E2E2;
+    opacity: .9;
+   /* border-radius: 25px; */
+}
+
+#aboutButton {
+  
+    padding: 8px;
+    margin-left: -.5em;
+    text-decoration: none;
+    color: #9e9e9e;
+    font-weight: bolder;
+    opacity: .9;
+    border: #E2E2E2 1px solid;
+
+}
+
+.profileNavImgPin {
+    float: right;
+    padding-left: 3.8em;
+}
+
+.menuBorder {  
+
+    width: 300px;
+}
+
+
+/* iPhone 4 Spec */
+
+@media screen and (max-height: 480px) {
+    #buttonsDiv {
+        position: fixed;
+        top: 360px;
+        z-index: 1000;
+        width: 320px;
+    }
+    
+    
+    
+    
+    
+}
+
+
+.guideExit {
+    
+    margin-top: 20px;
+    padding: 0;
+    width: 44px;
+    max-width: 15%;
+    height: 44px;
+    border: none;
+    text-indent: 2.5em;
+    font-size: 1.5em;
+    color: transparent;
+    background: transparent;
+    background-image: url('../images/profile/guideExit.svg');
+    background-size: 100%;
+    
+
+}
+
+/* -----------------------------------------------------------------------------
+// ------------------------------  reset Pass - CSS  --------------------------
+// ---------------------------------------------------------------------------*/ 
+
+.passPage {
+   
+    
+    
+}
+
+
+#passPageDiv {
+    
+    padding-top: 6em;
+    min-height: 480px;
+    
+    background-image: url("../images/resetPassImg.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center; 
+    
+}
+
+#changePass {
+    
+     padding: 10px;
+    margin-left: 8.5em; 
+    /* margin-bottom: 20px; */
+    text-decoration: none;
+    color: #426EB5;
+    font-weight: bolder;
+    background-color: #E2E2E2;
+    opacity: .9;
+    border-radius: 25px;
+}
